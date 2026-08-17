@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="formstyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside class="navigation">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <div id="menuItems" class="menuitems">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="LoginPage.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+            </a>
+        </div>
+    </aside>
+    </div>
+    <div id="dash" class="dashboard">
+        <div class="header">
+            <img src="CHOMS.png" class="dlogo" alt="CHOMS logo">
+            <h1 class="title">CHMS Dashboard</h1>
+            <p class="welcome">Welcome to City Health Management System Portal <i class="fa-solid fa-hand"></i></p>
+        </div>
+
+        <div class="cards">
+            <a href="appointment.html" class="card blue">
+                <i class="fa-solid fa-book-medical"></i>
+                <h1>Appointment Request</h1>
+                <p>Book Appointment</p>
+            </a>
+
+            <a href="MedicalRequest.html" class="card green">
+                <i class="fa-solid fa-book"></i>
+                <h1>Medical Record Request</h1>
+                <p>Request Record</p>
+            </a>
+
+            <a href="Quemanagement.html" class="card orange">
+                <i class="fa-solid fa-ticket"></i>
+                <h1>Queue Number</h1>
+                <p>View Queue Number</p>
+            </a>
+
+            <a href="" class="card purple">
+                <i class="fa-solid fa-user"></i>
+                <h1>Profile</h1>
+                <p>View Your Profile</p>
+            </a>
+        </div>
+        <div id="notification" class="notification hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Hello, Patient!</span>
+        </div>
+    </div>
+</body>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menuItems");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', function () {
+        const notification = document.getElementById('notification');
+        notification.classList.remove('hidden');
+        notification.classList.add('show');
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            notification.classList.add('hidden');
+        }, 3000);
+    });
+</script>
+
+</html>

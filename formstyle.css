@@ -1,0 +1,785 @@
+
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="password"],
+input[type="date"] {
+    width: 320px;
+    height: 35px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
+    text-align: left;
+    margin: 5px auto;
+}
+
+
+input[type="submit"] {
+    width: 320px;
+    height: 40px;
+}
+
+body {
+    background: linear-gradient(to bottom, #dbefff, #ffffff);
+
+}
+
+
+.Register {
+    background-color: white;
+    width: 30%;
+    margin: 50px auto;
+    padding: 40px;
+    font-size: 10px;
+    text-align: center;
+    border-radius: 30px;
+    border-style: groove;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+}
+
+.Register {
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.background {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.Header1 {
+    margin: 10px;
+    font-weight: 700px;
+    text-align: center;
+}
+
+.Parag {
+    margin: bottom 10px;
+    font-size: 15px;
+}
+
+.create-head {
+    margin: top 5px;
+    font-size: 15px;
+}
+
+.birthday,
+.upload,
+.gender {
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.birthday label,
+.upload label,
+.gender label {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.upload input[type="file"] {
+    width: 320px;
+}
+
+.gender div {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.Create {
+    width: 320px;
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    background-color: #4CAF50;
+    border-radius: 8px;
+    border: 3px solid rgb(27, 165, 17);
+    cursor: pointer;
+}
+
+.Loginpage {
+    width: 450px;
+    margin: 50px auto;
+    font-size: 20px;
+    padding: 40px;
+    border-color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.Loginpage {
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+input[type="text"].name2 {
+    width: 300px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 10px;
+
+}
+
+input[type="password"].pass2 {
+    width: 300px;
+    height: 35px;
+    margin: 10px 0;
+    border-radius: 10px;
+
+}
+
+.Remember input {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.Remember span {
+    margin: 0;
+    padding: 0;
+}
+
+.options {
+    width: 350px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Remember {
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    gap: 5px;
+    margin-left: 15px;
+}
+
+.forgot {
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+    margin-bottom: 10px;
+
+    margin-right: 15px;
+    gap: 5px;
+}
+
+.forgot a {
+    text-decoration: none;
+
+}
+
+.forgot a:hover {
+    text-decoration: underline color(srgb red green rgb(37, 88, 206));
+}
+
+.Logoback {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.login-btn {
+    width: 300px;
+    height: 35px;
+    font-size: 15px;
+    color: #F5F7FB;
+    background-color: #4CAF50;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.mainpage-logo {
+    width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.mainpage {
+    width: 600px;
+    margin: 50px auto;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    font-size: 10px;
+    padding: 40px;
+    border-color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+.mainpage {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.choms {
+    font-size: 20px;
+}
+
+.btn-login {
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.or {
+    text-align: center;
+    margin: 10px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.main-signup {
+    width: 250px;
+    height: 35px;
+    font-size: 15px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.dlogo {
+    width: 300px;
+    margin-bottom: 10px;
+    align-items: left;
+}
+
+.welcome {
+    margin: 0;
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+}
+
+.title {
+    margin-top: 15px;
+    font-size: 52px;
+    text-align: center;
+}
+
+.dashboard {
+    background-repeat: no-repeat;
+    width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 20px;
+    justify-content: center;
+    padding: 40px;
+    margin: 0;
+    border: solid black 3px;
+    border-radius: 20px;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    font-size: 10px;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    text-decoration: none;   /* removes underline since .card is now an <a> */
+    color: black;            /* removes default blue link color */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.blue {
+    border: solid rgb(0, 17, 255) 3px;
+    background-color: rgb(105, 158, 239);
+}
+
+.green {
+    border: solid rgb(0, 255, 8) 3px;
+    background-color: rgb(112, 232, 101);
+}
+
+.orange {
+    border: solid rgb(255, 157, 0) 3px;
+    background-color: rgb(232, 183, 105);
+}
+
+.purple {
+    border: solid purple 3px;
+    background-color: rgb(236, 161, 236);
+}
+
+.fa-book-medical {
+    color: rgb(0, 31, 189);
+    font-size: 70px;
+    margin-top: 10px;
+}
+
+.text h1,
+.text p {
+    margin: 1px;
+}
+
+.fa-book {
+    font-size: 70px;
+    color: #007c04;
+}
+
+.fa-ticket {
+    font-size: 70px;
+    color: rgb(190, 124, 2);
+}
+
+.fa-user {
+    font-size: 70px;
+    color: rgb(156, 1, 156);
+}
+
+.fa-hand {
+    font-size: 40px;
+    color: rgb(217, 188, 0);
+}
+
+.center {
+    text-align: center;
+}
+.text h1,
+.text p {
+    margin: 1px;
+}
+
+.fa-book {
+    font-size: 70px;
+    color: #007c04;
+
+}
+
+.fa-ticket {
+    font-size: 70px;
+    color: rgb(190, 124, 2);
+
+}
+
+.fa-user {
+    font-size: 70px;
+    color: rgb(156, 1, 156);
+
+}
+
+.fa-hand {
+    font-size: 40px;
+    color: rgb(217, 188, 0);
+}
+
+.center {
+    text-align: center;
+}
+
+.patientprofile {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 20px;
+
+
+    align-items: center;
+    background-color: white;
+}
+
+.hellopatient {
+    margin-top: 8px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.fa-regular {
+    font-size: 60px;
+    color: #4989dc;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+}
+
+.menu-btn {
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menuitems {
+    display: none;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    min-width: 160px;
+    z-index: 200;
+}
+
+.menuitems a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: black;
+}
+
+.menuitems a:hover {
+    background-color:   #dbefff;
+}
+
+.appointment-card {
+    background-repeat: no-repeat;
+    align-items: center;
+    width: 700px;
+    margin: 40px auto;
+    padding: 40px;
+}
+
+.book-style {
+    padding: 10px 16px;
+    margin-bottom: 5px;
+    border: solid rgb(0, 100, 251) 3px;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 14px;
+    background-color: rgb(96, 135, 255);
+    color: white;
+    align-items:center;
+}
+.book-style .icon{
+    grid-row: 1 / 3;
+    font-size: 28px;
+}
+.book-style .btitle{
+    grid-column: 2;
+    margin: 0;
+}
+.book-style .caption{
+    grid-column: 2;
+    font-style: italic;
+    font-size: 10px;
+}
+.card-form{
+    background-color: white;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+}
+.appointment-form{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+.form label{
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.form-select,
+.form-group select,
+.form-group input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.submit-btn{
+    background-color: rgb(0, 100, 251);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.submit-btn:hover{
+    background-color: rgb(0, 80, 220);
+}
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 14px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    z-index: 1000;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.notification.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.Queuenumber {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+.que-view{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    text-align: left; 
+}
+
+.numberQ {
+    background-color: royalblue;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.icon-ticket{
+    font-size: 60px;
+    margin-bottom: 0;
+}
+.p-number{
+    margin: 0;
+}
+.bg-entire{
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.waiting-inline{
+    display: flex;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.inline-left, .inline-right{
+    flex: 1;
+    text-align: center;
+   
+}
+.divider{  
+    width: 2px;
+    height: 120px;
+    background: #ccc;
+    margin: 0 30px;
+}
+
+.form-container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.head-format {
+    width: 600px;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.head-format > i {
+    font-size: 65px;
+}
+
+.head-text h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.head-text p {
+    margin: 8px 0 0;
+    font-size: 18px;
+}
+
+.card-format {
+    width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card-format label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 18px;
+}
+
+.card-format input,
+.card-format select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+    font-size: 16px;
+}
+
+.card-format label:first-child {
+    margin-top: 0;
+}
+.upload-ID{
+    align-items: left;
+    margin-left: 0;
+    margin-bottom: 5px;
+}
+.s-button{
+    background-color: rgb(0, 100, 251);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+}
+.s-button:hover{
+    background-color: rgb(0, 80, 220);
+}

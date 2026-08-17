@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Input Forms </title>
+    <link rel="stylesheet" href="formstyle.css">
+
+</head>
+
+<body>
+    <form action="mainPage.html" get="method">
+        <div class="Register">
+            <img src="CHOMS.png" class="background"></img>
+            <h1 class="Header1"> Welcome to CHMS</h1>
+            <i class="Parag"> City Health Management System</i>
+            <br>
+            <p class="create-head">Create Account</p>
+            <br>
+
+
+            <input type="text" required placeholder="Username">
+            <br>
+
+
+            <input type="email" required placeholder="Email" />
+            <br>
+
+
+
+            <input type="number" required step="1" placeholder="age" />
+            <br>
+
+
+
+            <input type="tel" required placeholder="Cellphone Number" maxlength="11">
+            <br>
+
+
+
+            <input type="password" required minlength="8" maxlength="16" placeholder="Password" />
+            <br>
+
+
+            <div class="birthday">
+                <label id="birth-day">Birthday</label>
+                <input for="birth-day" type="date">
+            </div>
+
+
+
+            <div class="upload">
+                <label>Upload ID</label>
+                <input type="file" accept="image/png" />
+            </div>
+
+
+
+            <div class="gender">
+                <label>Gender</label>
+                <div>
+                    <input type="checkbox" name="Male" id="male">
+                    <label for="male">Male</label>
+
+                    <input type="checkbox" name="Female" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+
+            <button type="submit" class="Create" >Create Account</button>
+
+
+
+
+        </div>
+        <footer>
+            <p>&copy; City of Malolos Bulacan 2026</p>
+        </footer>
+    </form>
+
+</body>
+
+</html>

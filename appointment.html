@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Appointment</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside class="navigation">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <div id="menuItems" class="menuitems">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="LoginPage.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+            </a>
+        </div>
+    </aside>
+    
+    <form class="card-form" id="appointmentForm">
+        <div class="appointment-card">
+            <h1>Request Appointment</h1>
+            <div class="book-style">
+                <i class="fa-solid fa-book-medical"></i>
+                <p class="btitle">Book a Doctor's Appointment</p>
+                <i class="caption">Schedule your appointment with a doctor easily</i>
+            </div>
+            <div class="card-form">
+                <p class="appointment-form">Fill-up the Form</p>
+                <div class="form-group">
+                    <label for="department">Department</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select department</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="radiology">Radiology</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="doctor">Doctor</label>
+                    <select id="doctor" name="doctor" required>
+                        <option value="">Select doctor</option>
+                        <option value="dr.jones">Dr. jones</option>
+                        <option value="dr.johnson">Dr. johnson</option>
+                        <option value="dr.wemby">Dr. wemby</option>
+                    </select>
+                    <div class="form-group">
+                        <label for="appoinment-date">Date</label>
+                        <input type="date" id="appointment-date" name="appointment-date" required>
+
+                        <label for="appointment-time">Time</label>
+                        <input type="time" id="appointment-time" name="appointment-time" required>
+                    </div>
+                    <button type="submit" class="submit-btn">Request Appointment</button>
+                    <div id="notification" class="notification hidden">
+                        <i class="fa-solid fa-circle-check"></i>
+                        <span>Your appointment request has been sent!</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<script>
+    function toggleMenu() {
+        const menu = document.getElementById("menuItems");
+        if (menu.style.display === "block") {
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    }
+
+    document.getElementById('appointmentForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const notification = document.getElementById('notification');
+        notification.classList.remove('hidden');
+        notification.classList.add('show');
+
+        setTimeout(() => {
+            notification.classList.remove('show');
+            notification.classList.add('hidden');
+        }, 3000);
+
+        this.reset();
+    });
+
+</script>
+</body>
+
+
+</html>

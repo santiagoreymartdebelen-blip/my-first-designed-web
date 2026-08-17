@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="formstyle.css">
+
+</head>
+
+<body>
+    <form id="loginForm">
+
+        <div class="Loginpage">
+
+            <img src="CHOMS.png" class="Logoback"></img>
+
+            <h1> Login to CHOMS</h1> <br>
+            <i> City Health Office Management System</i> <br>
+
+            <input type="text" class="name2" required placeholder="Username"> <br>
+            <input type="password" class="pass2" required placeholder="password">
+
+            <div class="options">
+                <div class="Remember">
+                    <input type="checkbox" id="remember">
+                    <span> Remember me</span>
+                </div>
+
+                <div class="forgot"><a href="#">forgot password?</a>
+                </div>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div id="notification" class="notification hidden">
+                <i class="fa-solid fa-circle-check"></i>
+                <span>Login Successful!</span>
+            </div>
+        </div>
+</body>
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+
+        const notification = document.getElementById('notification');
+        notification.classList.remove('hidden');
+        notification.classList.add('show');
+
+        setTimeout(() => {
+            window.location.href = "Dashboard.html";   // ← this is what actually navigates
+        }, 1500);
+    });
+</script>
+
+</html>

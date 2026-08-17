@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Medical Record Request</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <aside class="navigation">
+        <button class="menu-btn" onclick="toggleMenu()">&#9776;</button>
+        <div id="menuItems" class="menuitems">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+
+            <a href="LoginPage.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+            </a>
+        </div>
+    </aside>
+
+    <div class="head-format">
+        <i class="fa-solid fa-book-medical"></i>
+        <div class="head-text">
+            <h1>Request your Medical Record</h1>
+            <p>Fill out the form below to request a copy of your medical record.</p>
+        </div>
+    </div>
+    <form class="medical-form" id="request-form">
+    <div class="container-form">
+        <div class="card-format">
+            <div class="container-format">
+                <label>Full Name</label>
+                <input placeholder="enter name" type="text" required>
+
+                <label>Patient ID</label>
+                <input placeholder="enter patient ID" type="number" required>
+
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <div class="list-item">
+                <label for="type">Record Type</label>
+                <select name="type" id="type" required>
+                    <option value="">Select type</option>
+                    <option value="medical-history">Medical History</option>
+                    <option value="consultation">Consultation Record</option>
+                    <option value="laboratory">Laboratory Results</option>
+                    <option value="prescription">Prescription / Medication Record</option>
+                    <option value="diagnostic">Diagnostic / Imaging Results</option>
+                    <option value="complete-record">Complete Medical Record</option>
+                </select>
+            </div>
+            <div class="purpose-list">
+                <label for="purpose">Purpose of request</label>
+                <select name="purpose" id="purpose" required>
+                    <option value="">Select purpose</option>
+                    <option value="personal">Personal Copy</option>
+                    <option value="follow-up">Medical Follow-up</option>
+                    <option value="specialist">Referral to Specialist</option>
+                    <option value="insurance">Insurance Claim</option>
+                    <option value="employment">Employment Requirement</option>
+                    <option value="school">School Requirement</option>
+                    <option value="legal">Legal Requirement</option>
+                </select>
+            </div>
+            <div class="upload-ID">
+                <label>Upload ID</label required>
+                <input type="file" accept="image/png">
+            </div>
+
+            <button type="submit" class="s-button">Submit</button>
+        </div>
+        <div id="notification" class="notification hidden">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Your medical request has been sent!</span>
+        </div>
+    </div>
+    </form>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menuItems");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+        document.getElementById('request-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const notification = document.getElementById('notification');
+            notification.classList.remove('hidden');
+            notification.classList.add('show');
+
+            setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('hidden');
+            }, 3000);
+
+            this.reset();
+        });
+
+    </script>
+</body>
+
+</html>
